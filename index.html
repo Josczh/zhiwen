@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>知问前端</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
+</head>
+<body>
+	<div id="header">
+		<div class="header_main">
+			<h1>知问</h1>
+			<div class="head_search">
+				<input type="text" name="search" class="search" placeholder="输入搜索" />
+			</div>
+			<div class="head_button">
+				<button id="search_button">查询</button>
+			</div>
+			<div class="head_member">
+				<a href="javascript:;" id="reg_a">注册</a><span>|</span><a href="javascript:;" id="login_a">登录</a>
+			</div>
+		</div>
+	</div>
+	<div id="reg">
+		<p>
+			<label for="user">账号：</label><input type="text" name="user" class="text" id="user" title="请输入账号，不少于2位"><span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码：</label><input type="text" name="pass" class="text" id="pass" title="请输入密码是，不少于6位"><span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">邮箱：</label><input type="text" name="email" class="text" id="email" title="请输入邮箱地址"><span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">性别：</label>
+			<input type="radio" name="sex" value="male" id="male" checked=""><label for="male">男</label></input>
+			<input type="radio" name="sex" value="female" id="female" checked=""><label for="female">女</label></input>
+		</p>
+		<p>
+			<label for="date">生日：</label><input type="text" name="date" class="text" id="date" readonly="readonly">
+		</p>
+	</div>
+</body>
+</html>
